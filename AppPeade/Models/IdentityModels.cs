@@ -25,7 +25,7 @@ namespace AppPeade.Models
         {
         }
         public DbSet<Pyha> Pyhad { get; set; } //Lisatud Pyha DbSet
-        public DbSet<Kylaline> Kylalained { get; set; } // Lisatud Kylaline DbSet
+        public DbSet<Kylaline> Kylaline { get; set; } // Lisatud Kylaline DbSet
 
         public static ApplicationDbContext Create()
         {
