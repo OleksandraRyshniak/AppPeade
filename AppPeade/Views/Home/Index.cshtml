@@ -10,6 +10,12 @@
     </section>
 
     <div class="row">
-        @Html.ActionLink("Vastan küsimustele", "Ankeet", "Ankeet", new {@class= "btn btn-primary btn-md" })
+        <p class="lead">Uuri meie pakkumised: </p>
+        @Html.ActionLink("Meie pühad", "Index", "Pyhas", null, new { @class = "btn btn-primary btn-md" })
+    </div>
+
+    <div class="row">
+        <p class="lead">Tee oma valik: </p>
+        @Html.ActionLink("Vastan küsimustele", "Ankeet", "Home", null, new { @class = "btn btn-primary btn-md" })
     </div>
 </main>

@@ -1,11 +1,31 @@
-﻿ @model AppPeade.Models.Kylaline
-     @{ 
-         ViewBag.Title = "Tänan osalemise eest!";
-     }
+﻿@model AppPeade.Models.Kylaline
+@{
+    ViewBag.Title = "Tänan osalemise eest!";
+}
 <h2>Äitah, @Model.Nimi!</h2>
 <p>Sinu vastus on edukalt salvestatud.</p>
-<p>Ootame/ei oota sind üritusel @ViewBag.Pyhanimetus!</p>
-<div class="image-container">
-    <img src="~/Images/@ViewBag" style="width:300px"/>
-</div>
+
+@if (Model.OnKutse)
+{
+    <p class="text-success">
+        <strong>Rõõm kuulda! Ootame sind üritusele @ViewBag.Pyhanimetus!</strong>
+    </p>
+    <div class="image-container">
+        <img src="~/Images/@ViewBag.Pilt" style="width:300px" />
+    </div>
+}
+else
+{
+    <p class="text-danger">
+        <strong>Kahju, et ei saa tulla üritusele @ViewBag.Pyhanimetus!</strong>
+    </p>
+    <div class="image-container">
+        <img src="~/Images/@ViewBag.Pilt" style="width:300px" />
+    </div>
+}
+
+@*<p>Ootame/ei oota sind üritusel @ViewBag.Pyhanimetus!</p>
+    <div class="image-container">
+        <img src="~/Images/@ViewBag.Pilt" style="width:300px" />
+    </div>*@
 <p><a href="@Url.Action("Index", "Home")">Tagasi avalehele</a></p>
