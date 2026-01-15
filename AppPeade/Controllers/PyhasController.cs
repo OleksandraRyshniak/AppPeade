@@ -10,7 +10,7 @@ using AppPeade.Models;
 
 namespace AppPeade.Controllers
 {
-   // [Authorize] //Ainult sisse loogitud kasutajatele
+   [Authorize(Roles = "Admin")] //Ainult sisse loogitud kasutajatele
     public class PyhasController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();

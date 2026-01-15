@@ -12,5 +12,6 @@ namespace AppPeade.Models
         public string Email { get; set; }
         public bool OnKutse { get; set; }
         public int PyhaId { get; set; }
+        public virtual Pyha Pyha { get; set; }
     }
 }
