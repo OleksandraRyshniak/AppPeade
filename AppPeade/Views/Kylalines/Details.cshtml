@@ -1,13 +1,13 @@
 ﻿@model AppPeade.Models.Kylaline
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Detailid";
 }
 
-<h2>Details</h2>
+<h2>Detailid</h2>
 
 <div>
-    <h4>Kylaline</h4>
+    <h4>Külaline</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -45,6 +45,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Muuda", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Tagasi nimekirja", "Index")
 </p>

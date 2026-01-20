@@ -1,21 +1,22 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Avaleht";
 }
 
 <main>
     <section class="row" aria-labelledby="aspnetTitle">
-        <h1 id="title">ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-        <p><a href="https://asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
+        <h1 id="title"> <strong>Tere Tulemast Minu peod!</strong></h1>
+       
     </section>
 
     <div class="row">
-        <p class="lead">Uuri meie pakkumised: </p>
-        @Html.ActionLink("Meie pühad", "Index", "Pyhas", null, new { @class = "btn btn-primary btn-md" })
+        <p class="lead">Uuri meie pakkumised: </p><p>
+    @Html.ActionLink("Meie pühad", "Index", "Pyhas", null, new { @class = "btn btn-primary btn-md" })
+</p>
     </div>
 
     <div class="row">
-        <p class="lead">Tee oma valik: </p>
-        @Html.ActionLink("Vastan küsimustele", "Ankeet", "Home", null, new { @class = "btn btn-primary btn-md" })
+        <p class="lead">Tee oma valik: </p><p>
+    @Html.ActionLink("Vastan küsimustele", "Ankeet", "Home", null, new { @class = "btn btn-primary btn-md" })
+</p>
     </div>
 </main>

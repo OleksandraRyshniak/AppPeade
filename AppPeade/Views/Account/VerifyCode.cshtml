@@ -1,6 +1,6 @@
 ﻿@model AppPeade.Models.VerifyCodeViewModel
 @{
-    ViewBag.Title = "Verify";
+    ViewBag.Title = "Kinnita";
 }
 
 <main aria-labelledby="title">
@@ -14,7 +14,7 @@
         <hr />
         @Html.ValidationSummary("", new { @class = "text-danger" })
         <div class="row">
-            @Html.LabelFor(m => m.Code, new { @class = "col-md-2 col-form-label" })
+            @Html.LabelFor(m => m.Code, "Kood", new { @class = "col-md-2 col-form-label" })
             <div class="col-md-10">
                 @Html.TextBoxFor(m => m.Code, new { @class = "form-control" })
             </div>
@@ -29,7 +29,7 @@
         </div>
         <div class="row">
             <div class="offset-md-2 col-md-10">
-                <input type="submit" class="btn btn-outline-dark" value="Submit" />
+                <input type="submit" class="btn btn-primary" value="Kinnita" />
             </div>
         </div>
     }

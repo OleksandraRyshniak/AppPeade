@@ -3,8 +3,6 @@
     using AppPeade.Models;
     using Microsoft.AspNet.Identity;
     using Microsoft.AspNet.Identity.EntityFramework;
-    using System;
-    using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
 
@@ -29,13 +27,13 @@
                 roleManager.Create(role);
             }
             //2. Loo admin kasutaja
-            var adminEmail = "admin@test.ee";
+            var adminEmail = "oleksandraryshniak@gmail.com";
             var adminUser = context.Users.FirstOrDefault(u => u.Email == adminEmail);
             if (adminUser == null)
             {
                 var user = new ApplicationUser
-                {UserName = adminEmail,Email = adminEmail,};
-                userManager.Create(user, "Parool123!");
+                { UserName = adminEmail, Email = adminEmail, };
+                userManager.Create(user, "Parol123!");
                 adminUser = user;
             }
             //3. Lisa admin kasutaja admin roli

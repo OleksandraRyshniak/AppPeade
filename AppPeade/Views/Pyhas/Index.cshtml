@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<AppPeade.Models.Pyha>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Pühad";
 }
 
 <h2>Pühad</h2>
 
 <p>
-    @Html.ActionLink("Loo uus", "Create")
+    @Html.ActionLink("Loo uus püha", "Create")
 </p>
 <table class="table">
     <tr>
@@ -29,9 +29,9 @@
             @Html.DisplayFor(modelItem => item.Kuupaev)
         </td>
         <td>
-            @Html.ActionLink("Muuda", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Muuda püha", "Edit", new { id=item.Id }) |
             @Html.ActionLink("Detailid", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Kustuta", "Delete", new { id=item.Id })
+            @Html.ActionLink("Kustuta püha", "Delete", new { id=item.Id })
         </td>
     </tr>
 }

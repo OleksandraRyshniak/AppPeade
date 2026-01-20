@@ -63,7 +63,7 @@ namespace AppPeade.Controllers
             }
             ViewBag.Pyhanimetus = db.Pyhad.Find(kylaline.PyhaId)?.Nimetus;
             if (kylaline.OnKutse) {
-                ViewBag.Pilt = "vaikimisi_pilt.jpg";
+                ViewBag.Pilt = "happy.jpg";
             }else
                { ViewBag.Pilt = "sad.jpg"; }
             SaadaEmail(kylaline, ViewBag.Pilt, ViewBag.Pyhanimetus, kylaline.OnKutse);
@@ -81,7 +81,7 @@ namespace AppPeade.Controllers
                 WebMail.SmtpPort = 587;
                 WebMail.EnableSsl = true;
                 WebMail.UserName = "oleksandraryshniak@gmail.com";
-                WebMail.Password = "";
+                WebMail.Password = "ezaw dpcw jhhw mhhr";
                 WebMail.From = "oleksandraryshniak@gmail.com";
                 string sisu = "";
                 if (onkutse)

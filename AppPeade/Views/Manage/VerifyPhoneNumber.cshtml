@@ -1,6 +1,6 @@
 ﻿@model AppPeade.Models.VerifyPhoneNumberViewModel
 @{
-    ViewBag.Title = "Verify Phone Number";
+    ViewBag.Title = "Kinnita telefoninumber";
 }
 
 <main aria-labelledby="title">
@@ -10,7 +10,7 @@
     {
         @Html.AntiForgeryToken()
         @Html.Hidden("phoneNumber", @Model.PhoneNumber)
-        <h4>Enter verification code</h4>
+<h4>Sisesta kinnituskood</h4>
         <h5>@ViewBag.Status</h5>
         <hr />
         @Html.ValidationSummary("", new { @class = "text-danger" })
@@ -22,7 +22,7 @@
         </div>
         <div class="row">
             <div class="offset-md-2 col-md-10">
-                <input type="submit" class="btn btn-outline-dark" value="Submit" />
+                <input type="submit" class="btn btn-outline-dark" value="Kinniti" />
             </div>
         </div>
     }

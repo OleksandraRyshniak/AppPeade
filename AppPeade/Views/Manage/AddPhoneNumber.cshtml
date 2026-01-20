@@ -1,14 +1,14 @@
 ﻿@model AppPeade.Models.AddPhoneNumberViewModel
 @{
-    ViewBag.Title = "Phone Number";
+    ViewBag.Title = "Telefoninumber";
 }
 <main aria-labelledby="title">
     <h2 id="title">@ViewBag.Title.</h2>
 
-    @using (Html.BeginForm("AddPhoneNumber", "Manage", FormMethod.Post, new { role = "form" }))
+    @using (Html.BeginForm("Lisa telefoninumber", "Manage", FormMethod.Post, new { role = "form" }))
     {
         @Html.AntiForgeryToken()
-        <h4>Add a phone number</h4>
+        <h4>Lisa telefoninumber</h4>
         <hr />
         @Html.ValidationSummary("", new { @class = "text-danger" })
         <div class="row">
@@ -19,7 +19,7 @@
         </div>
         <div class="row">
             <div class="offset-md-2 col-md-10">
-                <input type="submit" class="btn btn-outline-dark" value="Submit" />
+                <input type="submit" class="btn btn-primary" value="Lisa" />
             </div>
         </div>
     }
